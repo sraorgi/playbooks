@@ -1,0 +1,8 @@
+---
+- name: LSBLK
+  hosts: all
+
+  tasks:
+
+  - name: Run LSBLK
+    shell: /usr/bin/LSBLK
