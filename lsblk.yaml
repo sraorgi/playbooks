@@ -5,4 +5,8 @@
   tasks:
 
   - name: Run LSBLK
-    shell: /usr/bin/LSBLK
+    shell: /usr/bin/lsblk
+    register: lsblk_result
+    
+  - debug:
+      var: lsblk_result.stdout_lines
