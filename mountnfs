@@ -1,0 +1,19 @@
+# Execution
+# ansible-playbook mount.yml
+
+- name: Test mount and unmounts
+  remote_user: root
+
+  tasks:
+  - name: Mount
+    mount:
+        path: /tmp/sourcefiles
+        src: /etc
+        opts: bind
+        fstype: none
+        state: mounted
+
+  - name: Unmount
+    mount:
+        path: /tmp/sourcefiles
+        state: absent
