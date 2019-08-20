@@ -8,7 +8,7 @@
   - name: Mount
     mount:
         path: /mnt
-        src: cohesity-corp1:/ansible
+        src: "cohesity-corp1:/ansible"
         opts: bind
         fstype: none
         state: mounted
