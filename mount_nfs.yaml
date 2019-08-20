@@ -7,8 +7,7 @@
   tasks:
   - name: Mount
     mount:
+        fstype: nfs
         path: /mnt
-        src: "cohesity-corp1:/ansible"
-        opts: bind
-        fstype: none
+        src: cohesity-corp1:/ansible
         state: mounted
