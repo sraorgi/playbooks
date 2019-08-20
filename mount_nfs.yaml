@@ -8,7 +8,7 @@
   tasks:
   - name: Mount
     mount:
-        path: /mnt/ansible
+        path: /mnt/
         src: "cohesity-corp1:/ansible"
         opts: bind
         fstype: none
