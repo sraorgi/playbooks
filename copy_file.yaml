@@ -1,9 +1,6 @@
-
+---
 - name: Test mount and unmounts
   hosts: all
-
-  tasks:
-  - name: Copy a new "ntp.conf file into place, backing up the original if it differs from the copied version
   copy:
     src: /mnt/testfile
     dest: /opt/
