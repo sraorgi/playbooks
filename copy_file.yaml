@@ -1,5 +1,5 @@
 ---
-- name: Test mount and unmounts
+- name: test file copy
   hosts: all
   copy:
     src: /mnt/testfile
