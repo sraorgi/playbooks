@@ -2,7 +2,6 @@
 # ansible-playbook mount.yml
 
 - name: Test mount and unmounts
-
   tasks:
   - name: Mount
     mount:
