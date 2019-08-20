@@ -2,18 +2,14 @@
 # ansible-playbook mount.yml
 
 - name: Test mount and unmounts
+  hosts: localhost
   remote_user: root
 
   tasks:
   - name: Mount
     mount:
-        path: /tmp/sourcefiles
-        src: /etc
+        path: /mnt/ansible
+        src: "cohesity-corp1:/ansible"
         opts: bind
         fstype: none
         state: mounted
-
-  - name: Unmount
-    mount:
-        path: /tmp/sourcefiles
-        state: absent
