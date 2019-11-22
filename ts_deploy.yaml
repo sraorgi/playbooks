@@ -18,13 +18,13 @@
     mode: '0755'
     
 - name: Mount
-    mount:
+  mount:
         fstype: nfs
         path: /mnt
         src: cohesity-corp1:/ansible
         state: mounted
         
 - name: copy the ear file
-    template:
+  template:
       src: /tsdeploy/testfile.txt
       dest: /home/oracle/to_depl/
