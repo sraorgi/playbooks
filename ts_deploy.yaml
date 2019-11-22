@@ -8,6 +8,6 @@
   - name: Mount
     mount:
         fstype: nfs
-        path: /mnt
+        path: /tsdeploy
         src: cohesity-corp1:/ansible
         state: mounted
