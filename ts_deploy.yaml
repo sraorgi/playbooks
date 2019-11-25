@@ -28,4 +28,4 @@
         state: mounted
         
     - name: copy the ear file - need to change this to just execute a move command from the mount
-      command: mv /tsdeploy/testfile.txt /home/oracle/to_depl
+      command: cp /tsdeploy/testfile.txt /home/oracle/to_depl
